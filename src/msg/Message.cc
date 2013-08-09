@@ -205,7 +205,7 @@ void Message::encode(uint64_t features, bool datacrc)
       int fd = ::open(fn, O_WRONLY|O_TRUNC|O_CREAT, 0644);
       if (fd >= 0) {
 	bl.write_fd(fd);
-	::close(fd);
+	::rclose(fd);
       }
     }
 #endif

@@ -622,10 +622,15 @@ ceph-common.o: tools/common.cc /usr/include/x86_64-linux-gnu/sys/stat.h \
  auth/RotatingKeyRing.h messages/MMonSubscribe.h common/SimpleRNG.h \
  mon/MonMap.h msg/SimpleMessenger.h msg/Messenger.h msg/DispatchQueue.h \
  common/PrioritizedQueue.h msg/Pipe.h auth/AuthSessionHandler.h \
- msg/Accepter.h tools/common.h mon/PGMap.h osd/osd_types.h mds/MDSMap.h \
- mon/mon_types.h messages/MOSDMap.h messages/MCommand.h \
- messages/MCommandReply.h messages/MCommand.h common/errno.h \
- global/global_init.h common/code_environment.h common/common_init.h
+ /usr/include/rdma/rsocket.h /usr/include/infiniband/verbs.h \
+ /usr/include/rdma/rdma_cma.h /usr/include/infiniband/sa.h \
+ /usr/include/poll.h /usr/include/x86_64-linux-gnu/sys/poll.h \
+ /usr/include/x86_64-linux-gnu/bits/poll.h \
+ /usr/include/x86_64-linux-gnu/bits/poll2.h msg/Accepter.h tools/common.h \
+ mon/PGMap.h osd/osd_types.h mds/MDSMap.h mon/mon_types.h \
+ messages/MOSDMap.h messages/MCommand.h messages/MCommandReply.h \
+ messages/MCommand.h common/errno.h global/global_init.h \
+ common/code_environment.h common/common_init.h
 
 /usr/include/x86_64-linux-gnu/sys/stat.h:
 
@@ -2204,6 +2209,22 @@ common/PrioritizedQueue.h:
 msg/Pipe.h:
 
 auth/AuthSessionHandler.h:
+
+/usr/include/rdma/rsocket.h:
+
+/usr/include/infiniband/verbs.h:
+
+/usr/include/rdma/rdma_cma.h:
+
+/usr/include/infiniband/sa.h:
+
+/usr/include/poll.h:
+
+/usr/include/x86_64-linux-gnu/sys/poll.h:
+
+/usr/include/x86_64-linux-gnu/bits/poll.h:
+
+/usr/include/x86_64-linux-gnu/bits/poll2.h:
 
 msg/Accepter.h:
 

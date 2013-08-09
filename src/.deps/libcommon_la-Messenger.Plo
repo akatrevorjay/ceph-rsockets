@@ -296,7 +296,11 @@ libcommon_la-Messenger.lo: msg/Messenger.cc include/types.h \
  msg/SimpleMessenger.h include/xlist.h msg/DispatchQueue.h \
  common/PrioritizedQueue.h common/Formatter.h /usr/include/inttypes.h \
  msg/Pipe.h auth/AuthSessionHandler.h msg/Message.h auth/Auth.h \
- msg/Accepter.h
+ /usr/include/rdma/rsocket.h /usr/include/infiniband/verbs.h \
+ /usr/include/rdma/rdma_cma.h /usr/include/infiniband/sa.h \
+ /usr/include/poll.h /usr/include/x86_64-linux-gnu/sys/poll.h \
+ /usr/include/x86_64-linux-gnu/bits/poll.h \
+ /usr/include/x86_64-linux-gnu/bits/poll2.h msg/Accepter.h
 
 include/types.h:
 
@@ -1127,5 +1131,21 @@ auth/AuthSessionHandler.h:
 msg/Message.h:
 
 auth/Auth.h:
+
+/usr/include/rdma/rsocket.h:
+
+/usr/include/infiniband/verbs.h:
+
+/usr/include/rdma/rdma_cma.h:
+
+/usr/include/infiniband/sa.h:
+
+/usr/include/poll.h:
+
+/usr/include/x86_64-linux-gnu/sys/poll.h:
+
+/usr/include/x86_64-linux-gnu/bits/poll.h:
+
+/usr/include/x86_64-linux-gnu/bits/poll2.h:
 
 msg/Accepter.h:

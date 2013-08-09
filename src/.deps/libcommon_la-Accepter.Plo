@@ -42,7 +42,9 @@ libcommon_la-Accepter.lo: msg/Accepter.cc /usr/include/rdma/rsocket.h \
  /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
  /usr/include/poll.h /usr/include/x86_64-linux-gnu/sys/poll.h \
  /usr/include/x86_64-linux-gnu/bits/poll.h \
- /usr/include/x86_64-linux-gnu/bits/poll2.h /usr/include/assert.h \
+ /usr/include/x86_64-linux-gnu/bits/poll2.h \
+ /usr/include/x86_64-linux-gnu/sys/mman.h \
+ /usr/include/x86_64-linux-gnu/bits/mman.h /usr/include/assert.h \
  /usr/include/netinet/tcp.h \
  /usr/lib/gcc/x86_64-linux-gnu/4.7/include-fixed/limits.h \
  /usr/lib/gcc/x86_64-linux-gnu/4.7/include-fixed/syslimits.h \
@@ -110,10 +112,8 @@ libcommon_la-Accepter.lo: msg/Accepter.cc /usr/include/rdma/rsocket.h \
  /usr/include/x86_64-linux-gnu/bits/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/stdio2.h /usr/include/malloc.h \
  /usr/include/string.h /usr/include/x86_64-linux-gnu/bits/string3.h \
- /usr/include/x86_64-linux-gnu/sys/mman.h \
- /usr/include/x86_64-linux-gnu/bits/mman.h /usr/include/c++/4.7/iostream \
- /usr/include/c++/4.7/ostream /usr/include/c++/4.7/ios \
- /usr/include/c++/4.7/bits/char_traits.h \
+ /usr/include/c++/4.7/iostream /usr/include/c++/4.7/ostream \
+ /usr/include/c++/4.7/ios /usr/include/c++/4.7/bits/char_traits.h \
  /usr/include/c++/4.7/bits/localefwd.h \
  /usr/include/x86_64-linux-gnu/c++/4.7/./bits/c++locale.h \
  /usr/include/c++/4.7/clocale /usr/include/locale.h \
@@ -425,6 +425,10 @@ libcommon_la-Accepter.lo: msg/Accepter.cc /usr/include/rdma/rsocket.h \
 
 /usr/include/x86_64-linux-gnu/bits/poll2.h:
 
+/usr/include/x86_64-linux-gnu/sys/mman.h:
+
+/usr/include/x86_64-linux-gnu/bits/mman.h:
+
 /usr/include/assert.h:
 
 /usr/include/netinet/tcp.h:
@@ -608,10 +612,6 @@ include/buffer.h:
 /usr/include/string.h:
 
 /usr/include/x86_64-linux-gnu/bits/string3.h:
-
-/usr/include/x86_64-linux-gnu/sys/mman.h:
-
-/usr/include/x86_64-linux-gnu/bits/mman.h:
 
 /usr/include/c++/4.7/iostream:
 

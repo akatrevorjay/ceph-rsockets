@@ -13,7 +13,6 @@
  */
 
 #include <rdma/rsocket.h>
-#include <sys/socket.h>
 #include <netinet/tcp.h>
 #include <sys/uio.h>
 #include <limits.h>
@@ -236,7 +235,7 @@ int Pipe::accept()
   // and peer's socket addr (they might not know their ip)
   entity_addr_t socket_addr;
   socklen_t len = sizeof(socket_addr.ss_addr());
-  int r = ::getpeername(sd, (sockaddr*)&socket_addr.ss_addr(), &len);
+  int r = ::rgetpeername(sd, (sockaddr*)&socket_addr.ss_addr(), &len);
   if (r < 0) {
     char buf[80];
     ldout(msgr->cct,0) << "accept failed to getpeername " << errno << " " << strerror_r(errno, buf, sizeof(buf)) << dendl;
@@ -720,7 +719,7 @@ void Pipe::set_socket_options()
   // disable Nagle algorithm?
   if (msgr->cct->_conf->ms_tcp_nodelay) {
     int flag = 1;
-    int r = ::setsockopt(sd, IPPROTO_TCP, TCP_NODELAY, (char*)&flag, sizeof(flag));
+    int r = ::rsetsockopt(sd, IPPROTO_TCP, TCP_NODELAY, (char*)&flag, sizeof(flag));
     if (r < 0) {
       r = -errno;
       ldout(msgr->cct,0) << "couldn't set TCP_NODELAY: " << cpp_strerror(r) << dendl;
@@ -728,7 +727,7 @@ void Pipe::set_socket_options()
   }
   if (msgr->cct->_conf->ms_tcp_rcvbuf) {
     int size = msgr->cct->_conf->ms_tcp_rcvbuf;
-    int r = ::setsockopt(sd, SOL_SOCKET, SO_RCVBUF, (void*)&size, sizeof(size));
+    int r = ::rsetsockopt(sd, SOL_SOCKET, SO_RCVBUF, (void*)&size, sizeof(size));
     if (r < 0)  {
       r = -errno;
       ldout(msgr->cct,0) << "couldn't set SO_RCVBUF to " << size << ": " << cpp_strerror(r) << dendl;
@@ -2107,7 +2106,7 @@ int Pipe::tcp_read_wait()
   pfd.events |= POLLRDHUP;
 #endif
 
-  if (poll(&pfd, 1, msgr->timeout) <= 0)
+  if (rpoll(&pfd, 1, msgr->timeout) <= 0)
     return -1;
 
   evmask = POLLERR | POLLHUP | POLLNVAL;
@@ -2163,7 +2162,7 @@ int Pipe::tcp_write(const char *buf, int len)
     }
   }
 
-  if (poll(&pfd, 1, -1) < 0)
+  if (rpoll(&pfd, 1, -1) < 0)
     return -1;
 
   if (!(pfd.revents & POLLOUT))

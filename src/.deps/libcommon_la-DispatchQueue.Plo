@@ -299,7 +299,11 @@ libcommon_la-DispatchQueue.lo: msg/DispatchQueue.cc msg/Message.h \
  /usr/include/x86_64-linux-gnu/asm/errno.h \
  /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
  msg/Pipe.h msg/msg_types.h auth/AuthSessionHandler.h auth/Auth.h \
- msg/Accepter.h
+ /usr/include/rdma/rsocket.h /usr/include/infiniband/verbs.h \
+ /usr/include/rdma/rdma_cma.h /usr/include/infiniband/sa.h \
+ /usr/include/poll.h /usr/include/x86_64-linux-gnu/sys/poll.h \
+ /usr/include/x86_64-linux-gnu/bits/poll.h \
+ /usr/include/x86_64-linux-gnu/bits/poll2.h msg/Accepter.h
 
 msg/Message.h:
 
@@ -1132,5 +1136,21 @@ msg/msg_types.h:
 auth/AuthSessionHandler.h:
 
 auth/Auth.h:
+
+/usr/include/rdma/rsocket.h:
+
+/usr/include/infiniband/verbs.h:
+
+/usr/include/rdma/rdma_cma.h:
+
+/usr/include/infiniband/sa.h:
+
+/usr/include/poll.h:
+
+/usr/include/x86_64-linux-gnu/sys/poll.h:
+
+/usr/include/x86_64-linux-gnu/bits/poll.h:
+
+/usr/include/x86_64-linux-gnu/bits/poll2.h:
 
 msg/Accepter.h:

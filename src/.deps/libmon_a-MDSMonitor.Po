@@ -623,48 +623,31 @@ libmon_a-MDSMonitor.o: mon/MDSMonitor.cc /usr/include/c++/4.7/sstream \
  /usr/include/boost/scoped_ptr.hpp \
  /usr/include/boost/smart_ptr/scoped_ptr.hpp os/KeyValueDB.h \
  os/ObjectMap.h os/IndexManager.h os/CollectionIndex.h osd/osd_types.h \
- os/HashIndex.h os/LFNIndex.h common/ceph_crypto.h /usr/include/nss/nss.h \
- /usr/include/nss/seccomon.h /usr/include/nss/utilrename.h \
- /usr/include/nspr/prtypes.h /usr/include/nspr/prcpucfg.h \
- /usr/include/nspr/obsolete/protypes.h /usr/include/nss/secport.h \
- /usr/include/nspr/prlink.h /usr/include/nspr/prtypes.h \
- /usr/include/nspr/prlog.h /usr/include/nspr/plarena.h \
- /usr/include/nspr/plarenas.h /usr/include/nspr/plstr.h \
- /usr/include/nss/pk11pub.h /usr/include/nss/secoidt.h \
- /usr/include/nss/secitem.h /usr/include/nspr/plhash.h \
- /usr/include/nss/secdert.h /usr/include/nss/keyt.h \
- /usr/include/nss/keythi.h /usr/include/nss/pkcs11t.h \
- /usr/include/nss/pkcs11p.h /usr/include/nss/pkcs11n.h \
- /usr/include/nss/pkcs11u.h /usr/include/nss/secmodt.h \
- /usr/include/nss/nssrwlkt.h /usr/include/nss/nssilock.h \
- /usr/include/nspr/prmon.h /usr/include/nspr/prinrval.h \
- /usr/include/nspr/prlock.h /usr/include/nspr/prcvar.h \
- /usr/include/nspr/prlock.h /usr/include/nss/nssilckt.h \
- /usr/include/nss/secoid.h /usr/include/nss/secasn1t.h \
- /usr/include/nss/secasn1.h /usr/include/nss/utilmodt.h \
- /usr/include/nspr/prclist.h /usr/include/nss/certt.h \
- /usr/include/nspr/prio.h /usr/include/nspr/prlong.h \
- /usr/include/nspr/prtime.h /usr/include/nspr/prinet.h \
- /usr/include/arpa/inet.h /usr/include/netdb.h /usr/include/rpc/netdb.h \
- /usr/include/x86_64-linux-gnu/bits/siginfo.h \
- /usr/include/x86_64-linux-gnu/bits/netdb.h /usr/include/nss/pkcs7t.h \
- /usr/include/nss/cmsreclist.h os/FlatIndex.h os/SequencerPosition.h \
- os/LevelDBStore.h os/KeyValueDB.h /usr/include/leveldb/db.h \
- /usr/include/leveldb/iterator.h /usr/include/leveldb/slice.h \
- /usr/include/leveldb/status.h /usr/include/leveldb/options.h \
- /usr/include/leveldb/env.h /usr/include/c++/4.7/cstdarg \
- /usr/include/leveldb/write_batch.h /usr/include/leveldb/cache.h \
- /usr/include/leveldb/filter_policy.h common/errno.h mon/Monitor.h \
- mon/MonMap.h mon/Elector.h mon/Session.h common/LogClient.h \
- common/LogEntry.h common/SimpleRNG.h auth/cephx/CephxKeyServer.h \
- auth/KeyRing.h auth/cephx/CephxProtocol.h auth/cephx/../Auth.h \
- auth/cephx/../RotatingKeyRing.h auth/AuthMethodList.h include/inttypes.h \
- perfglue/heap_profiler.h messages/MMonCommand.h mon/MonitorStore.h \
- common/compiler_extensions.h mon/MonitorDBStore.h messages/MMDSBeacon.h \
- mon/OSDMonitor.h messages/MOSDBoot.h messages/MOSDMap.h \
- messages/MOSDFailure.h messages/MPoolOp.h common/strtol.h \
- common/ceph_argparse.h messages/MMDSMap.h messages/MMDSLoadTargets.h \
- messages/MGenericMessage.h common/perf_counters.h
+ os/HashIndex.h os/LFNIndex.h common/ceph_crypto.h \
+ /usr/include/cryptopp/md5.h /usr/include/cryptopp/iterhash.h \
+ /usr/include/cryptopp/cryptlib.h /usr/include/cryptopp/config.h \
+ /usr/include/cryptopp/stdcpp.h /usr/include/cryptopp/secblock.h \
+ /usr/include/cryptopp/misc.h /usr/include/cryptopp/smartptr.h \
+ /usr/include/byteswap.h /usr/include/c++/4.7/cstring \
+ /usr/include/cryptopp/simple.h /usr/include/cryptopp/sha.h \
+ /usr/include/cryptopp/hmac.h /usr/include/cryptopp/seckey.h \
+ os/FlatIndex.h os/SequencerPosition.h os/LevelDBStore.h os/KeyValueDB.h \
+ /usr/include/leveldb/db.h /usr/include/leveldb/iterator.h \
+ /usr/include/leveldb/slice.h /usr/include/leveldb/status.h \
+ /usr/include/leveldb/options.h /usr/include/leveldb/env.h \
+ /usr/include/c++/4.7/cstdarg /usr/include/leveldb/write_batch.h \
+ /usr/include/leveldb/cache.h /usr/include/leveldb/filter_policy.h \
+ common/errno.h mon/Monitor.h mon/MonMap.h mon/Elector.h mon/Session.h \
+ common/LogClient.h common/LogEntry.h common/SimpleRNG.h \
+ auth/cephx/CephxKeyServer.h auth/KeyRing.h auth/cephx/CephxProtocol.h \
+ auth/cephx/../Auth.h auth/cephx/../RotatingKeyRing.h \
+ auth/AuthMethodList.h include/inttypes.h perfglue/heap_profiler.h \
+ messages/MMonCommand.h mon/MonitorStore.h common/compiler_extensions.h \
+ mon/MonitorDBStore.h messages/MMDSBeacon.h mon/OSDMonitor.h \
+ messages/MOSDBoot.h messages/MOSDMap.h messages/MOSDFailure.h \
+ messages/MPoolOp.h common/strtol.h common/ceph_argparse.h \
+ messages/MMDSMap.h messages/MMDSLoadTargets.h messages/MGenericMessage.h \
+ common/perf_counters.h
 
 /usr/include/c++/4.7/sstream:
 
@@ -2232,105 +2215,33 @@ os/LFNIndex.h:
 
 common/ceph_crypto.h:
 
-/usr/include/nss/nss.h:
+/usr/include/cryptopp/md5.h:
 
-/usr/include/nss/seccomon.h:
+/usr/include/cryptopp/iterhash.h:
 
-/usr/include/nss/utilrename.h:
+/usr/include/cryptopp/cryptlib.h:
 
-/usr/include/nspr/prtypes.h:
+/usr/include/cryptopp/config.h:
 
-/usr/include/nspr/prcpucfg.h:
+/usr/include/cryptopp/stdcpp.h:
 
-/usr/include/nspr/obsolete/protypes.h:
+/usr/include/cryptopp/secblock.h:
 
-/usr/include/nss/secport.h:
+/usr/include/cryptopp/misc.h:
 
-/usr/include/nspr/prlink.h:
+/usr/include/cryptopp/smartptr.h:
 
-/usr/include/nspr/prtypes.h:
+/usr/include/byteswap.h:
 
-/usr/include/nspr/prlog.h:
+/usr/include/c++/4.7/cstring:
 
-/usr/include/nspr/plarena.h:
+/usr/include/cryptopp/simple.h:
 
-/usr/include/nspr/plarenas.h:
+/usr/include/cryptopp/sha.h:
 
-/usr/include/nspr/plstr.h:
+/usr/include/cryptopp/hmac.h:
 
-/usr/include/nss/pk11pub.h:
-
-/usr/include/nss/secoidt.h:
-
-/usr/include/nss/secitem.h:
-
-/usr/include/nspr/plhash.h:
-
-/usr/include/nss/secdert.h:
-
-/usr/include/nss/keyt.h:
-
-/usr/include/nss/keythi.h:
-
-/usr/include/nss/pkcs11t.h:
-
-/usr/include/nss/pkcs11p.h:
-
-/usr/include/nss/pkcs11n.h:
-
-/usr/include/nss/pkcs11u.h:
-
-/usr/include/nss/secmodt.h:
-
-/usr/include/nss/nssrwlkt.h:
-
-/usr/include/nss/nssilock.h:
-
-/usr/include/nspr/prmon.h:
-
-/usr/include/nspr/prinrval.h:
-
-/usr/include/nspr/prlock.h:
-
-/usr/include/nspr/prcvar.h:
-
-/usr/include/nspr/prlock.h:
-
-/usr/include/nss/nssilckt.h:
-
-/usr/include/nss/secoid.h:
-
-/usr/include/nss/secasn1t.h:
-
-/usr/include/nss/secasn1.h:
-
-/usr/include/nss/utilmodt.h:
-
-/usr/include/nspr/prclist.h:
-
-/usr/include/nss/certt.h:
-
-/usr/include/nspr/prio.h:
-
-/usr/include/nspr/prlong.h:
-
-/usr/include/nspr/prtime.h:
-
-/usr/include/nspr/prinet.h:
-
-/usr/include/arpa/inet.h:
-
-/usr/include/netdb.h:
-
-/usr/include/rpc/netdb.h:
-
-/usr/include/x86_64-linux-gnu/bits/siginfo.h:
-
-/usr/include/x86_64-linux-gnu/bits/netdb.h:
-
-/usr/include/nss/pkcs7t.h:
-
-/usr/include/nss/cmsreclist.h:
+/usr/include/cryptopp/seckey.h:
 
 os/FlatIndex.h:
 

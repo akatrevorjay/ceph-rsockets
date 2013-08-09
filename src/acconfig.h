@@ -210,13 +210,13 @@
 #define STDC_HEADERS 1
 
 /* Define if using CryptoPP. */
-/* #undef USE_CRYPTOPP */
+#define USE_CRYPTOPP 1
 
 /* Define if using NSS. */
-#define USE_NSS 1
+/* #undef USE_NSS */
 
 /* Version number of package */
 #define VERSION "0.61.3"
 
 /* define if radosgw enabled */
-#define WITH_RADOSGW 1
+/* #undef WITH_RADOSGW */

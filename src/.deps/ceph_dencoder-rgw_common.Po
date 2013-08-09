@@ -578,31 +578,18 @@ ceph_dencoder-rgw_common.o: rgw/rgw_common.cc /usr/include/errno.h \
  /usr/include/boost/utility/swap.hpp \
  /usr/include/boost/tuple/tuple_comparison.hpp include/intarith.h \
  common/Formatter.h /usr/include/inttypes.h rgw/rgw_common.h \
- common/ceph_crypto.h /usr/include/nss/nss.h /usr/include/nss/seccomon.h \
- /usr/include/nss/utilrename.h /usr/include/nspr/prtypes.h \
- /usr/include/nspr/prcpucfg.h /usr/include/nspr/obsolete/protypes.h \
- /usr/include/nss/secport.h /usr/include/nspr/prlink.h \
- /usr/include/nspr/prtypes.h /usr/include/nspr/prlog.h \
- /usr/include/nspr/plarena.h /usr/include/nspr/plarenas.h \
- /usr/include/nspr/plstr.h /usr/include/nss/pk11pub.h \
- /usr/include/nss/secoidt.h /usr/include/nss/secitem.h \
- /usr/include/nspr/plhash.h /usr/include/nss/secdert.h \
- /usr/include/nss/keyt.h /usr/include/nss/keythi.h \
- /usr/include/nss/pkcs11t.h /usr/include/nss/pkcs11p.h \
- /usr/include/nss/pkcs11n.h /usr/include/nss/pkcs11u.h \
- /usr/include/nss/secmodt.h /usr/include/nss/nssrwlkt.h \
- /usr/include/nss/nssilock.h /usr/include/nspr/prmon.h \
- /usr/include/nspr/prinrval.h /usr/include/nspr/prlock.h \
- /usr/include/nspr/prcvar.h /usr/include/nspr/prlock.h \
- /usr/include/nss/nssilckt.h /usr/include/nss/secoid.h \
- /usr/include/nss/secasn1t.h /usr/include/nss/secasn1.h \
- /usr/include/nss/utilmodt.h /usr/include/nspr/prclist.h \
- /usr/include/nss/certt.h /usr/include/nspr/prio.h \
- /usr/include/nspr/prlong.h /usr/include/nspr/prtime.h \
- /usr/include/nspr/prinet.h /usr/include/arpa/inet.h /usr/include/netdb.h \
- /usr/include/rpc/netdb.h /usr/include/x86_64-linux-gnu/bits/siginfo.h \
- /usr/include/x86_64-linux-gnu/bits/netdb.h /usr/include/nss/pkcs7t.h \
- /usr/include/nss/cmsreclist.h common/debug.h common/dout.h \
+ common/ceph_crypto.h /usr/include/cryptopp/md5.h \
+ /usr/include/cryptopp/iterhash.h /usr/include/cryptopp/cryptlib.h \
+ /usr/include/cryptopp/config.h /usr/include/cryptopp/stdcpp.h \
+ /usr/lib/gcc/x86_64-linux-gnu/4.7/include-fixed/limits.h \
+ /usr/lib/gcc/x86_64-linux-gnu/4.7/include-fixed/syslimits.h \
+ /usr/include/limits.h /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
+ /usr/include/cryptopp/secblock.h /usr/include/cryptopp/misc.h \
+ /usr/include/cryptopp/smartptr.h /usr/include/byteswap.h \
+ /usr/include/c++/4.7/cstring /usr/include/cryptopp/simple.h \
+ /usr/include/cryptopp/sha.h /usr/include/cryptopp/hmac.h \
+ /usr/include/cryptopp/seckey.h common/debug.h common/dout.h \
  global/global_context.h common/ceph_context.h include/buffer.h \
  include/atomic.h /usr/include/atomic_ops.h \
  /usr/include/atomic_ops/ao_version.h \
@@ -631,12 +618,8 @@ ceph_dencoder-rgw_common.o: rgw/rgw_common.cc /usr/include/errno.h \
  /usr/include/x86_64-linux-gnu/bits/mathinline.h log/Log.h \
  common/Thread.h log/Entry.h common/PrebufferedStreambuf.h \
  log/EntryQueue.h log/SubsystemMap.h common/perf_counters.h rgw/rgw_acl.h \
- rgw/rgw_cors.h rgw/rgw_string.h \
- /usr/lib/gcc/x86_64-linux-gnu/4.7/include-fixed/limits.h \
- /usr/lib/gcc/x86_64-linux-gnu/4.7/include-fixed/syslimits.h \
- /usr/include/limits.h /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
- /usr/include/x86_64-linux-gnu/bits/xopen_lim.h common/armor.h \
- common/errno.h common/Formatter.h include/str_list.h auth/Crypto.h
+ rgw/rgw_cors.h rgw/rgw_string.h common/armor.h common/errno.h \
+ common/Formatter.h include/str_list.h auth/Crypto.h
 
 /usr/include/errno.h:
 
@@ -2000,105 +1983,43 @@ rgw/rgw_common.h:
 
 common/ceph_crypto.h:
 
-/usr/include/nss/nss.h:
+/usr/include/cryptopp/md5.h:
 
-/usr/include/nss/seccomon.h:
+/usr/include/cryptopp/iterhash.h:
 
-/usr/include/nss/utilrename.h:
+/usr/include/cryptopp/cryptlib.h:
 
-/usr/include/nspr/prtypes.h:
+/usr/include/cryptopp/config.h:
 
-/usr/include/nspr/prcpucfg.h:
+/usr/include/cryptopp/stdcpp.h:
 
-/usr/include/nspr/obsolete/protypes.h:
+/usr/lib/gcc/x86_64-linux-gnu/4.7/include-fixed/limits.h:
 
-/usr/include/nss/secport.h:
+/usr/lib/gcc/x86_64-linux-gnu/4.7/include-fixed/syslimits.h:
 
-/usr/include/nspr/prlink.h:
+/usr/include/limits.h:
 
-/usr/include/nspr/prtypes.h:
+/usr/include/x86_64-linux-gnu/bits/posix2_lim.h:
 
-/usr/include/nspr/prlog.h:
+/usr/include/x86_64-linux-gnu/bits/xopen_lim.h:
 
-/usr/include/nspr/plarena.h:
+/usr/include/cryptopp/secblock.h:
 
-/usr/include/nspr/plarenas.h:
+/usr/include/cryptopp/misc.h:
 
-/usr/include/nspr/plstr.h:
+/usr/include/cryptopp/smartptr.h:
 
-/usr/include/nss/pk11pub.h:
+/usr/include/byteswap.h:
 
-/usr/include/nss/secoidt.h:
+/usr/include/c++/4.7/cstring:
 
-/usr/include/nss/secitem.h:
+/usr/include/cryptopp/simple.h:
 
-/usr/include/nspr/plhash.h:
+/usr/include/cryptopp/sha.h:
 
-/usr/include/nss/secdert.h:
+/usr/include/cryptopp/hmac.h:
 
-/usr/include/nss/keyt.h:
-
-/usr/include/nss/keythi.h:
-
-/usr/include/nss/pkcs11t.h:
-
-/usr/include/nss/pkcs11p.h:
-
-/usr/include/nss/pkcs11n.h:
-
-/usr/include/nss/pkcs11u.h:
-
-/usr/include/nss/secmodt.h:
-
-/usr/include/nss/nssrwlkt.h:
-
-/usr/include/nss/nssilock.h:
-
-/usr/include/nspr/prmon.h:
-
-/usr/include/nspr/prinrval.h:
-
-/usr/include/nspr/prlock.h:
-
-/usr/include/nspr/prcvar.h:
-
-/usr/include/nspr/prlock.h:
-
-/usr/include/nss/nssilckt.h:
-
-/usr/include/nss/secoid.h:
-
-/usr/include/nss/secasn1t.h:
-
-/usr/include/nss/secasn1.h:
-
-/usr/include/nss/utilmodt.h:
-
-/usr/include/nspr/prclist.h:
-
-/usr/include/nss/certt.h:
-
-/usr/include/nspr/prio.h:
-
-/usr/include/nspr/prlong.h:
-
-/usr/include/nspr/prtime.h:
-
-/usr/include/nspr/prinet.h:
-
-/usr/include/arpa/inet.h:
-
-/usr/include/netdb.h:
-
-/usr/include/rpc/netdb.h:
-
-/usr/include/x86_64-linux-gnu/bits/siginfo.h:
-
-/usr/include/x86_64-linux-gnu/bits/netdb.h:
-
-/usr/include/nss/pkcs7t.h:
-
-/usr/include/nss/cmsreclist.h:
+/usr/include/cryptopp/seckey.h:
 
 common/debug.h:
 
@@ -2203,16 +2124,6 @@ rgw/rgw_acl.h:
 rgw/rgw_cors.h:
 
 rgw/rgw_string.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/4.7/include-fixed/limits.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/4.7/include-fixed/syslimits.h:
-
-/usr/include/limits.h:
-
-/usr/include/x86_64-linux-gnu/bits/posix2_lim.h:
-
-/usr/include/x86_64-linux-gnu/bits/xopen_lim.h:
 
 common/armor.h:
 

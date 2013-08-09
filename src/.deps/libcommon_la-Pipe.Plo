@@ -42,7 +42,9 @@ libcommon_la-Pipe.lo: msg/Pipe.cc /usr/include/rdma/rsocket.h \
  /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
  /usr/include/poll.h /usr/include/x86_64-linux-gnu/sys/poll.h \
  /usr/include/x86_64-linux-gnu/bits/poll.h \
- /usr/include/x86_64-linux-gnu/bits/poll2.h /usr/include/netinet/tcp.h \
+ /usr/include/x86_64-linux-gnu/bits/poll2.h \
+ /usr/include/x86_64-linux-gnu/sys/mman.h \
+ /usr/include/x86_64-linux-gnu/bits/mman.h /usr/include/netinet/tcp.h \
  /usr/lib/gcc/x86_64-linux-gnu/4.7/include-fixed/limits.h \
  /usr/lib/gcc/x86_64-linux-gnu/4.7/include-fixed/syslimits.h \
  /usr/include/limits.h /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
@@ -160,12 +162,11 @@ libcommon_la-Pipe.lo: msg/Pipe.cc /usr/include/rdma/rsocket.h \
  /usr/include/x86_64-linux-gnu/bits/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/stdio2.h /usr/include/malloc.h \
  /usr/include/string.h /usr/include/x86_64-linux-gnu/bits/string3.h \
- /usr/include/x86_64-linux-gnu/sys/mman.h \
- /usr/include/x86_64-linux-gnu/bits/mman.h /usr/include/c++/4.7/iomanip \
- /usr/include/c++/4.7/list /usr/include/c++/4.7/bits/stl_list.h \
- /usr/include/c++/4.7/bits/list.tcc include/page.h include/crc32c.h \
- include/assert.h /usr/include/c++/4.7/set \
- /usr/include/c++/4.7/bits/stl_tree.h /usr/include/c++/4.7/bits/stl_set.h \
+ /usr/include/c++/4.7/iomanip /usr/include/c++/4.7/list \
+ /usr/include/c++/4.7/bits/stl_list.h /usr/include/c++/4.7/bits/list.tcc \
+ include/page.h include/crc32c.h include/assert.h \
+ /usr/include/c++/4.7/set /usr/include/c++/4.7/bits/stl_tree.h \
+ /usr/include/c++/4.7/bits/stl_set.h \
  /usr/include/c++/4.7/bits/stl_multiset.h /usr/include/c++/4.7/map \
  /usr/include/c++/4.7/bits/stl_map.h \
  /usr/include/c++/4.7/bits/stl_multimap.h /usr/include/c++/4.7/deque \
@@ -426,6 +427,10 @@ libcommon_la-Pipe.lo: msg/Pipe.cc /usr/include/rdma/rsocket.h \
 /usr/include/x86_64-linux-gnu/bits/poll.h:
 
 /usr/include/x86_64-linux-gnu/bits/poll2.h:
+
+/usr/include/x86_64-linux-gnu/sys/mman.h:
+
+/usr/include/x86_64-linux-gnu/bits/mman.h:
 
 /usr/include/netinet/tcp.h:
 
@@ -740,10 +745,6 @@ include/buffer.h:
 /usr/include/string.h:
 
 /usr/include/x86_64-linux-gnu/bits/string3.h:
-
-/usr/include/x86_64-linux-gnu/sys/mman.h:
-
-/usr/include/x86_64-linux-gnu/bits/mman.h:
 
 /usr/include/c++/4.7/iomanip:
 

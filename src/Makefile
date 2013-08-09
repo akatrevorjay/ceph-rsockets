@@ -113,10 +113,10 @@ am__append_19 = ${tcmalloc_safety_flags}
 #	ceph_test_librgw_build \
 #	ceph_test_libcephfs_build
 #am__append_24 = ceph_test_libhadoopcephfs_build
-am__append_25 = librgw.a
-am__append_26 = radosgw radosgw-admin
-am__append_27 = ceph_rgw_multiparser \
-	ceph_rgw_jsonparser
+#am__append_25 = librgw.a
+#am__append_26 = radosgw radosgw-admin
+#am__append_27 = ceph_rgw_multiparser \
+#	ceph_rgw_jsonparser
 #am__append_28 = rest-bench
 ##am__append_29 = -ls3
 #am__append_30 = libs3/build/lib/libs3.a -lcurl -lxml2
@@ -126,11 +126,11 @@ am__append_33 = rbd
 am__append_34 = -ltcmalloc
 am__append_35 = ${tcmalloc_safety_flags}
 am__append_36 = perfglue/heap_profiler.cc
-am__append_37 = libcls_rgw.la
+#am__append_37 = libcls_rgw.la
 #am__append_38 = libhadoopcephfs.la
 #am__append_39 = libcephfs_jni.la
-am__append_40 = ceph_test_cors
-am__append_41 = ceph_test_cls_rgw
+#am__append_40 = ceph_test_cors
+#am__append_41 = ceph_test_cls_rgw
 #am__append_42 = -DUSE_BOOST_SPIRIT_OLD_HDR
 am__append_43 = -latomic_ops
 #am__append_44 = -fprofile-arcs -ftest-coverage
@@ -250,31 +250,31 @@ am__librgw_a_SOURCES_DIST = rgw/librgw.cc rgw/rgw_acl.cc \
 	rgw/rgw_log.cc rgw/rgw_multi.cc rgw/rgw_policy_s3.cc \
 	rgw/rgw_gc.cc rgw/rgw_multi_del.cc rgw/rgw_env.cc \
 	rgw/rgw_cors.cc rgw/rgw_cors_s3.cc
-am_librgw_a_OBJECTS = librgw_a-librgw.$(OBJEXT) \
-	librgw_a-rgw_acl.$(OBJEXT) \
-	librgw_a-rgw_acl_s3.$(OBJEXT) \
-	librgw_a-rgw_acl_swift.$(OBJEXT) \
-	librgw_a-rgw_client_io.$(OBJEXT) \
-	librgw_a-rgw_fcgi.$(OBJEXT) \
-	librgw_a-rgw_xml.$(OBJEXT) \
-	librgw_a-rgw_usage.$(OBJEXT) \
-	librgw_a-rgw_json_enc.$(OBJEXT) \
-	librgw_a-rgw_user.$(OBJEXT) \
-	librgw_a-rgw_bucket.$(OBJEXT) \
-	librgw_a-rgw_tools.$(OBJEXT) \
-	librgw_a-rgw_rados.$(OBJEXT) \
-	librgw_a-rgw_op.$(OBJEXT) \
-	librgw_a-rgw_common.$(OBJEXT) \
-	librgw_a-rgw_cache.$(OBJEXT) \
-	librgw_a-rgw_formats.$(OBJEXT) \
-	librgw_a-rgw_log.$(OBJEXT) \
-	librgw_a-rgw_multi.$(OBJEXT) \
-	librgw_a-rgw_policy_s3.$(OBJEXT) \
-	librgw_a-rgw_gc.$(OBJEXT) \
-	librgw_a-rgw_multi_del.$(OBJEXT) \
-	librgw_a-rgw_env.$(OBJEXT) \
-	librgw_a-rgw_cors.$(OBJEXT) \
-	librgw_a-rgw_cors_s3.$(OBJEXT)
+#am_librgw_a_OBJECTS = librgw_a-librgw.$(OBJEXT) \
+#	librgw_a-rgw_acl.$(OBJEXT) \
+#	librgw_a-rgw_acl_s3.$(OBJEXT) \
+#	librgw_a-rgw_acl_swift.$(OBJEXT) \
+#	librgw_a-rgw_client_io.$(OBJEXT) \
+#	librgw_a-rgw_fcgi.$(OBJEXT) \
+#	librgw_a-rgw_xml.$(OBJEXT) \
+#	librgw_a-rgw_usage.$(OBJEXT) \
+#	librgw_a-rgw_json_enc.$(OBJEXT) \
+#	librgw_a-rgw_user.$(OBJEXT) \
+#	librgw_a-rgw_bucket.$(OBJEXT) \
+#	librgw_a-rgw_tools.$(OBJEXT) \
+#	librgw_a-rgw_rados.$(OBJEXT) \
+#	librgw_a-rgw_op.$(OBJEXT) \
+#	librgw_a-rgw_common.$(OBJEXT) \
+#	librgw_a-rgw_cache.$(OBJEXT) \
+#	librgw_a-rgw_formats.$(OBJEXT) \
+#	librgw_a-rgw_log.$(OBJEXT) \
+#	librgw_a-rgw_multi.$(OBJEXT) \
+#	librgw_a-rgw_policy_s3.$(OBJEXT) \
+#	librgw_a-rgw_gc.$(OBJEXT) \
+#	librgw_a-rgw_multi_del.$(OBJEXT) \
+#	librgw_a-rgw_env.$(OBJEXT) \
+#	librgw_a-rgw_cors.$(OBJEXT) \
+#	librgw_a-rgw_cors_s3.$(OBJEXT)
 librgw_a_OBJECTS = $(am_librgw_a_OBJECTS)
 am__vpath_adj_setup = srcdirstrip=`echo "$(srcdir)" | sed 's|.|.|g'`;
 am__vpath_adj = case $$p in \
@@ -376,17 +376,17 @@ libcls_refcount_la_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CXX \
 	$(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=link $(CXXLD) \
 	$(libcls_refcount_la_CXXFLAGS) $(CXXFLAGS) \
 	$(libcls_refcount_la_LDFLAGS) $(LDFLAGS) -o $@
-libcls_rgw_la_DEPENDENCIES = $(am__DEPENDENCIES_1) \
-	$(am__DEPENDENCIES_2)
+#libcls_rgw_la_DEPENDENCIES = $(am__DEPENDENCIES_1) \
+#	$(am__DEPENDENCIES_2)
 am__libcls_rgw_la_SOURCES_DIST = cls/rgw/cls_rgw.cc
-am_libcls_rgw_la_OBJECTS =  \
-	libcls_rgw_la-cls_rgw.lo
+#am_libcls_rgw_la_OBJECTS =  \
+#	libcls_rgw_la-cls_rgw.lo
 libcls_rgw_la_OBJECTS = $(am_libcls_rgw_la_OBJECTS)
 libcls_rgw_la_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CXX \
 	$(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=link $(CXXLD) \
 	$(libcls_rgw_la_CXXFLAGS) $(CXXFLAGS) $(libcls_rgw_la_LDFLAGS) \
 	$(LDFLAGS) -o $@
-am_libcls_rgw_la_rpath = -rpath $(radoslibdir)
+#am_libcls_rgw_la_rpath = -rpath $(radoslibdir)
 libcommon_la_LIBADD =
 am__libcommon_la_SOURCES_DIST = ./ceph_ver.c \
 	auth/AuthAuthorizeHandler.cc auth/AuthClientHandler.cc \
@@ -555,8 +555,8 @@ am_libsystest_la_OBJECTS = cross_process_sem.lo systest_runnable.lo \
 	systest_settings.lo
 libsystest_la_OBJECTS = $(am_libsystest_la_OBJECTS)
 am__EXEEXT_1 = ceph-fuse$(EXEEXT) rbd-fuse$(EXEEXT)
-am__EXEEXT_2 = radosgw$(EXEEXT) \
-	radosgw-admin$(EXEEXT)
+#am__EXEEXT_2 = radosgw$(EXEEXT) \
+#	radosgw-admin$(EXEEXT)
 #am__EXEEXT_3 = rest-bench$(EXEEXT)
 am__EXEEXT_4 = rbd$(EXEEXT)
 #am__EXEEXT_5 =  \
@@ -565,10 +565,10 @@ am__EXEEXT_4 = rbd$(EXEEXT)
 #	ceph_test_librgw_build$(EXEEXT) \
 #	ceph_test_libcephfs_build$(EXEEXT)
 #am__EXEEXT_6 = ceph_test_libhadoopcephfs_build$(EXEEXT)
-am__EXEEXT_7 = ceph_rgw_multiparser$(EXEEXT) \
-	ceph_rgw_jsonparser$(EXEEXT)
-am__EXEEXT_8 = ceph_test_cors$(EXEEXT)
-am__EXEEXT_9 = ceph_test_cls_rgw$(EXEEXT)
+#am__EXEEXT_7 = ceph_rgw_multiparser$(EXEEXT) \
+#	ceph_rgw_jsonparser$(EXEEXT)
+#am__EXEEXT_8 = ceph_test_cors$(EXEEXT)
+#am__EXEEXT_9 = ceph_test_cls_rgw$(EXEEXT)
 am__EXEEXT_10 = ceph-osdomap-tool$(EXEEXT) ceph-monstore-tool$(EXEEXT) \
 	ceph_psim$(EXEEXT) ceph_test_mutate$(EXEEXT) \
 	ceph_test_rewrite_latency$(EXEEXT) ceph_test_msgr$(EXEEXT) \
@@ -773,27 +773,27 @@ ceph_radosacl_DEPENDENCIES = librados.la $(am__DEPENDENCIES_1) \
 	$(am__DEPENDENCIES_1) $(am__DEPENDENCIES_2)
 am__ceph_rgw_jsonparser_SOURCES_DIST = rgw/rgw_jsonparser.cc \
 	rgw/rgw_common.cc rgw/rgw_json_enc.cc
-am_ceph_rgw_jsonparser_OBJECTS = ceph_rgw_jsonparser-rgw_jsonparser.$(OBJEXT) \
-	ceph_rgw_jsonparser-rgw_common.$(OBJEXT) \
-	ceph_rgw_jsonparser-rgw_json_enc.$(OBJEXT)
+#am_ceph_rgw_jsonparser_OBJECTS = ceph_rgw_jsonparser-rgw_jsonparser.$(OBJEXT) \
+#	ceph_rgw_jsonparser-rgw_common.$(OBJEXT) \
+#	ceph_rgw_jsonparser-rgw_json_enc.$(OBJEXT)
 ceph_rgw_jsonparser_OBJECTS = $(am_ceph_rgw_jsonparser_OBJECTS)
-am__DEPENDENCIES_5 = libglobal.la librgw.a \
-	librados.la libcls_rgw_client.a \
-	libcls_lock_client.a \
-	libcls_refcount_client.a \
-	$(am__DEPENDENCIES_1) $(am__DEPENDENCIES_1) \
-	$(am__DEPENDENCIES_2)
-ceph_rgw_jsonparser_DEPENDENCIES =  \
-	$(am__DEPENDENCIES_5)
+#am__DEPENDENCIES_5 = libglobal.la librgw.a \
+#	librados.la libcls_rgw_client.a \
+#	libcls_lock_client.a \
+#	libcls_refcount_client.a \
+#	$(am__DEPENDENCIES_1) $(am__DEPENDENCIES_1) \
+#	$(am__DEPENDENCIES_2)
+#ceph_rgw_jsonparser_DEPENDENCIES =  \
+#	$(am__DEPENDENCIES_5)
 ceph_rgw_jsonparser_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CXX \
 	$(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=link $(CXXLD) \
 	$(ceph_rgw_jsonparser_CXXFLAGS) $(CXXFLAGS) $(AM_LDFLAGS) \
 	$(LDFLAGS) -o $@
 am__ceph_rgw_multiparser_SOURCES_DIST = rgw/rgw_multiparser.cc
-am_ceph_rgw_multiparser_OBJECTS = ceph_rgw_multiparser-rgw_multiparser.$(OBJEXT)
+#am_ceph_rgw_multiparser_OBJECTS = ceph_rgw_multiparser-rgw_multiparser.$(OBJEXT)
 ceph_rgw_multiparser_OBJECTS = $(am_ceph_rgw_multiparser_OBJECTS)
-ceph_rgw_multiparser_DEPENDENCIES =  \
-	$(am__DEPENDENCIES_5)
+#ceph_rgw_multiparser_DEPENDENCIES =  \
+#	$(am__DEPENDENCIES_5)
 ceph_rgw_multiparser_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CXX \
 	$(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=link $(CXXLD) \
 	$(ceph_rgw_multiparser_CXXFLAGS) $(CXXFLAGS) $(AM_LDFLAGS) \
@@ -895,24 +895,24 @@ ceph_test_cls_refcount_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CXX \
 	$(LDFLAGS) -o $@
 am__ceph_test_cls_rgw_SOURCES_DIST = test/cls_rgw/test_cls_rgw.cc \
 	test/librados/test.cc
-am_ceph_test_cls_rgw_OBJECTS =  \
-	ceph_test_cls_rgw-test_cls_rgw.$(OBJEXT) \
-	ceph_test_cls_rgw-test.$(OBJEXT)
+#am_ceph_test_cls_rgw_OBJECTS =  \
+#	ceph_test_cls_rgw-test_cls_rgw.$(OBJEXT) \
+#	ceph_test_cls_rgw-test.$(OBJEXT)
 ceph_test_cls_rgw_OBJECTS = $(am_ceph_test_cls_rgw_OBJECTS)
-ceph_test_cls_rgw_DEPENDENCIES = librados.la \
-	libcls_rgw_client.a $(am__DEPENDENCIES_6)
+#ceph_test_cls_rgw_DEPENDENCIES = librados.la \
+#	libcls_rgw_client.a $(am__DEPENDENCIES_6)
 ceph_test_cls_rgw_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CXX \
 	$(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=link $(CXXLD) \
 	$(ceph_test_cls_rgw_CXXFLAGS) $(CXXFLAGS) $(AM_LDFLAGS) \
 	$(LDFLAGS) -o $@
 am__ceph_test_cors_SOURCES_DIST = test/test_cors.cc
-am_ceph_test_cors_OBJECTS =  \
-	ceph_test_cors-test_cors.$(OBJEXT)
+#am_ceph_test_cors_OBJECTS =  \
+#	ceph_test_cors-test_cors.$(OBJEXT)
 ceph_test_cors_OBJECTS = $(am_ceph_test_cors_OBJECTS)
 am__DEPENDENCIES_7 = $(am__DEPENDENCIES_6)
-ceph_test_cors_DEPENDENCIES = librados.la librgw.a \
-	$(am__DEPENDENCIES_7) $(am__DEPENDENCIES_6) \
-	$(am__DEPENDENCIES_1)
+#ceph_test_cors_DEPENDENCIES = librados.la librgw.a \
+#	$(am__DEPENDENCIES_7) $(am__DEPENDENCIES_6) \
+#	$(am__DEPENDENCIES_1)
 ceph_test_cors_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CXX \
 	$(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=link $(CXXLD) \
 	$(ceph_test_cors_CXXFLAGS) $(CXXFLAGS) \
@@ -2058,27 +2058,27 @@ am__radosgw_SOURCES_DIST = rgw/rgw_resolve.cc rgw/rgw_rest.cc \
 	rgw/rgw_rest_user.cc rgw/rgw_rest_bucket.cc \
 	rgw/rgw_http_client.cc rgw/rgw_swift.cc rgw/rgw_swift_auth.cc \
 	rgw/rgw_main.cc
-am_radosgw_OBJECTS = radosgw-rgw_resolve.$(OBJEXT) \
-	radosgw-rgw_rest.$(OBJEXT) \
-	radosgw-rgw_rest_swift.$(OBJEXT) \
-	radosgw-rgw_rest_s3.$(OBJEXT) \
-	radosgw-rgw_rest_usage.$(OBJEXT) \
-	radosgw-rgw_rest_user.$(OBJEXT) \
-	radosgw-rgw_rest_bucket.$(OBJEXT) \
-	radosgw-rgw_http_client.$(OBJEXT) \
-	radosgw-rgw_swift.$(OBJEXT) \
-	radosgw-rgw_swift_auth.$(OBJEXT) \
-	radosgw-rgw_main.$(OBJEXT)
+#am_radosgw_OBJECTS = radosgw-rgw_resolve.$(OBJEXT) \
+#	radosgw-rgw_rest.$(OBJEXT) \
+#	radosgw-rgw_rest_swift.$(OBJEXT) \
+#	radosgw-rgw_rest_s3.$(OBJEXT) \
+#	radosgw-rgw_rest_usage.$(OBJEXT) \
+#	radosgw-rgw_rest_user.$(OBJEXT) \
+#	radosgw-rgw_rest_bucket.$(OBJEXT) \
+#	radosgw-rgw_http_client.$(OBJEXT) \
+#	radosgw-rgw_swift.$(OBJEXT) \
+#	radosgw-rgw_swift_auth.$(OBJEXT) \
+#	radosgw-rgw_main.$(OBJEXT)
 radosgw_OBJECTS = $(am_radosgw_OBJECTS)
-radosgw_DEPENDENCIES = $(am__DEPENDENCIES_5)
+#radosgw_DEPENDENCIES = $(am__DEPENDENCIES_5)
 radosgw_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CXX $(AM_LIBTOOLFLAGS) \
 	$(LIBTOOLFLAGS) --mode=link $(CXXLD) $(radosgw_CXXFLAGS) \
 	$(CXXFLAGS) $(AM_LDFLAGS) $(LDFLAGS) -o $@
 am__radosgw_admin_SOURCES_DIST = rgw/rgw_admin.cc
-am_radosgw_admin_OBJECTS =  \
-	radosgw_admin-rgw_admin.$(OBJEXT)
+#am_radosgw_admin_OBJECTS =  \
+#	radosgw_admin-rgw_admin.$(OBJEXT)
 radosgw_admin_OBJECTS = $(am_radosgw_admin_OBJECTS)
-radosgw_admin_DEPENDENCIES = $(am__DEPENDENCIES_5)
+#radosgw_admin_DEPENDENCIES = $(am__DEPENDENCIES_5)
 radosgw_admin_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CXX \
 	$(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=link $(CXXLD) \
 	$(radosgw_admin_CXXFLAGS) $(CXXFLAGS) $(AM_LDFLAGS) $(LDFLAGS) \
@@ -2736,27 +2736,27 @@ am__relativize = \
     dir1=`echo "$$dir1" | sed -e "$$sed_rest"`; \
   done; \
   reldir="$$dir2"
-ACLOCAL = ${SHELL} /home/matt/Desktop/ceph-0.61.3-rsockets/missing --run aclocal-1.11
+ACLOCAL = ${SHELL} /root/ceph-rsockets/missing --run aclocal-1.11
 AMTAR = $${TAR-tar}
-AM_CXXFLAGS =  -I/usr/include/nss -I/usr/include/nspr    $(AM_COMMON_FLAGS) \
+AM_CXXFLAGS =   $(AM_COMMON_FLAGS) \
 	-DCEPH_LIBDIR=\"${libdir}\" -Wnon-virtual-dtor \
 	-Wno-invalid-offsetof -Wstrict-null-sentinel $(am__append_42) \
 	$(am__append_45)
 AM_DEFAULT_VERBOSITY = 0
 AR = ar
-AUTOCONF = ${SHELL} /home/matt/Desktop/ceph-0.61.3-rsockets/missing --run autoconf
-AUTOHEADER = ${SHELL} /home/matt/Desktop/ceph-0.61.3-rsockets/missing --run autoheader
-AUTOMAKE = ${SHELL} /home/matt/Desktop/ceph-0.61.3-rsockets/missing --run automake-1.11
-AWK = gawk
+AUTOCONF = ${SHELL} /root/ceph-rsockets/missing --run autoconf
+AUTOHEADER = ${SHELL} /root/ceph-rsockets/missing --run autoheader
+AUTOMAKE = ${SHELL} /root/ceph-rsockets/missing --run automake-1.11
+AWK = mawk
 CC = gcc
 CCDEPMODE = depmode=gcc3
 CFLAGS = -g -O2
 CPP = gcc -E
 CPPFLAGS = 
-CRYPTOPP_CFLAGS = 
-CRYPTOPP_LIBS = no
-CRYPTO_CFLAGS = -I/usr/include/nss -I/usr/include/nspr  
-CRYPTO_LIBS = -lnss3 -lnssutil3 -lsmime3 -lssl3 -lplds4 -lplc4 -lnspr4  
+CRYPTOPP_CFLAGS =  
+CRYPTOPP_LIBS = -lcrypto++  
+CRYPTO_CFLAGS =  
+CRYPTO_LIBS = -lcrypto++  
 CXX = g++
 CXXCPP = g++ -E
 CXXDEPMODE = depmode=gcc3
@@ -2774,8 +2774,8 @@ EGREP = /bin/grep -E
 EXEEXT = 
 EXTRA_CLASSPATH_JAR = 
 FGREP = /bin/grep -F
-GCOV_PREFIX_STRIP = 5
-GIT_CHECK = 
+GCOV_PREFIX_STRIP = 3
+GIT_CHECK = yes
 GREP = /bin/grep
 INSTALL = /usr/bin/install -c
 INSTALL_DATA = ${INSTALL} -m 644
@@ -2793,19 +2793,19 @@ LIBEDIT_CFLAGS =
 LIBEDIT_LIBS = -ledit  
 LIBFUSE = -lfuse
 LIBOBJS = 
-LIBS = -lboost_thread-mt -lboost_system-mt -lleveldb -lsnappy 
+LIBS = -lboost_thread-mt -lboost_system-mt -lleveldb -lsnappy -lrdmacm
 LIBTCMALLOC = -ltcmalloc
 LIBTOOL = $(SHELL) $(top_builddir)/libtool
 LIPO = 
 LN_S = ln -s
 LTLIBOBJS = 
-MAKEINFO = ${SHELL} /home/matt/Desktop/ceph-0.61.3-rsockets/missing --run makeinfo
+MAKEINFO = ${SHELL} /root/ceph-rsockets/missing --run makeinfo
 MANIFEST_TOOL = :
 MKDIR_P = /bin/mkdir -p
 NM = /usr/bin/nm -B
 NMEDIT = 
-NSS_CFLAGS = -I/usr/include/nss -I/usr/include/nspr  
-NSS_LIBS = -lnss3 -lnssutil3 -lsmime3 -lssl3 -lplds4 -lplc4 -lnspr4  
+NSS_CFLAGS = 
+NSS_LIBS = 
 OBJDUMP = objdump
 OBJEXT = o
 OTOOL = 
@@ -2838,10 +2838,10 @@ STRIP = strip
 VERSION = 0.61.3
 WARN_IGNORED_QUALIFIERS = -Wignored-qualifiers
 WARN_TYPE_LIMITS = -Wtype-limits
-abs_builddir = /home/matt/Desktop/ceph-0.61.3-rsockets/src
-abs_srcdir = /home/matt/Desktop/ceph-0.61.3-rsockets/src
-abs_top_builddir = /home/matt/Desktop/ceph-0.61.3-rsockets
-abs_top_srcdir = /home/matt/Desktop/ceph-0.61.3-rsockets
+abs_builddir = /root/ceph-rsockets/src
+abs_srcdir = /root/ceph-rsockets/src
+abs_top_builddir = /root/ceph-rsockets
+abs_top_srcdir = /root/ceph-rsockets
 ac_ct_AR = ar
 ac_ct_CC = gcc
 ac_ct_CXX = g++
@@ -2872,7 +2872,7 @@ host_vendor = unknown
 htmldir = ${docdir}
 includedir = ${prefix}/include
 infodir = ${datarootdir}/info
-install_sh = ${SHELL} /home/matt/Desktop/ceph-0.61.3-rsockets/install-sh
+install_sh = ${SHELL} /root/ceph-rsockets/install-sh
 libdir = ${exec_prefix}/lib
 libexecdir = ${exec_prefix}/libexec
 localedir = ${datarootdir}/locale
@@ -3187,64 +3187,64 @@ librados_la_LIBADD = libcommon.la $(PTHREAD_LIBS) $(CRYPTO_LIBS) $(EXTRALIBS)
 librados_la_LDFLAGS = ${AM_LDFLAGS} -version-info 2:0:0 -export-symbols-regex '^rados_.*'
 
 # rgw
-librgw_a_SOURCES = \
-	rgw/librgw.cc \
-	rgw/rgw_acl.cc \
-	rgw/rgw_acl_s3.cc \
-	rgw/rgw_acl_swift.cc \
-	rgw/rgw_client_io.cc \
-	rgw/rgw_fcgi.cc \
-	rgw/rgw_xml.cc \
-	rgw/rgw_usage.cc \
-	rgw/rgw_json_enc.cc \
-	rgw/rgw_user.cc \
-	rgw/rgw_bucket.cc\
-        rgw/rgw_tools.cc \
-	rgw/rgw_rados.cc \
-	rgw/rgw_op.cc \
-	rgw/rgw_common.cc \
-	rgw/rgw_cache.cc \
-	rgw/rgw_formats.cc \
-	rgw/rgw_log.cc \
-	rgw/rgw_multi.cc \
-	rgw/rgw_policy_s3.cc \
-	rgw/rgw_gc.cc \
-	rgw/rgw_multi_del.cc \
-	rgw/rgw_env.cc \
-	rgw/rgw_cors.cc \
-	rgw/rgw_cors_s3.cc
+#librgw_a_SOURCES = \
+#	rgw/librgw.cc \
+#	rgw/rgw_acl.cc \
+#	rgw/rgw_acl_s3.cc \
+#	rgw/rgw_acl_swift.cc \
+#	rgw/rgw_client_io.cc \
+#	rgw/rgw_fcgi.cc \
+#	rgw/rgw_xml.cc \
+#	rgw/rgw_usage.cc \
+#	rgw/rgw_json_enc.cc \
+#	rgw/rgw_user.cc \
+#	rgw/rgw_bucket.cc\
+#        rgw/rgw_tools.cc \
+#	rgw/rgw_rados.cc \
+#	rgw/rgw_op.cc \
+#	rgw/rgw_common.cc \
+#	rgw/rgw_cache.cc \
+#	rgw/rgw_formats.cc \
+#	rgw/rgw_log.cc \
+#	rgw/rgw_multi.cc \
+#	rgw/rgw_policy_s3.cc \
+#	rgw/rgw_gc.cc \
+#	rgw/rgw_multi_del.cc \
+#	rgw/rgw_env.cc \
+#	rgw/rgw_cors.cc \
+#	rgw/rgw_cors_s3.cc
 
-librgw_a_CFLAGS = ${CRYPTO_CFLAGS} ${AM_CFLAGS}
-librgw_a_CXXFLAGS = -Woverloaded-virtual ${AM_CXXFLAGS}
-my_radosgw_ldadd = \
-       libglobal.la librgw.a librados.la libcls_rgw_client.a \
-       libcls_lock_client.a libcls_refcount_client.a -lcurl -lexpat \
-       $(PTHREAD_LIBS) -lm $(CRYPTO_LIBS) $(EXTRALIBS)
+#librgw_a_CFLAGS = ${CRYPTO_CFLAGS} ${AM_CFLAGS}
+#librgw_a_CXXFLAGS = -Woverloaded-virtual ${AM_CXXFLAGS}
+#my_radosgw_ldadd = \
+#       libglobal.la librgw.a librados.la libcls_rgw_client.a \
+#       libcls_lock_client.a libcls_refcount_client.a -lcurl -lexpat \
+#       $(PTHREAD_LIBS) -lm $(CRYPTO_LIBS) $(EXTRALIBS)
 
-radosgw_SOURCES = \
-	rgw/rgw_resolve.cc \
-        rgw/rgw_rest.cc \
-        rgw/rgw_rest_swift.cc \
-        rgw/rgw_rest_s3.cc \
-        rgw/rgw_rest_usage.cc \
-        rgw/rgw_rest_user.cc \
-        rgw/rgw_rest_bucket.cc \
-        rgw/rgw_http_client.cc \
-        rgw/rgw_swift.cc \
-	rgw/rgw_swift_auth.cc \
-	rgw/rgw_main.cc
+#radosgw_SOURCES = \
+#	rgw/rgw_resolve.cc \
+#        rgw/rgw_rest.cc \
+#        rgw/rgw_rest_swift.cc \
+#        rgw/rgw_rest_s3.cc \
+#        rgw/rgw_rest_usage.cc \
+#        rgw/rgw_rest_user.cc \
+#        rgw/rgw_rest_bucket.cc \
+#        rgw/rgw_http_client.cc \
+#        rgw/rgw_swift.cc \
+#	rgw/rgw_swift_auth.cc \
+#	rgw/rgw_main.cc
 
-radosgw_LDADD = $(my_radosgw_ldadd) -lfcgi -lresolv
-radosgw_CXXFLAGS = ${AM_CXXFLAGS}
-radosgw_admin_SOURCES = rgw/rgw_admin.cc
-radosgw_admin_CXXFLAGS = ${AM_CXXFLAGS}
-radosgw_admin_LDADD = $(my_radosgw_ldadd)
-ceph_rgw_multiparser_SOURCES = rgw/rgw_multiparser.cc
-ceph_rgw_multiparser_CXXFLAGS = ${AM_CXXFLAGS}
-ceph_rgw_multiparser_LDADD = $(my_radosgw_ldadd)
-ceph_rgw_jsonparser_SOURCES = rgw/rgw_jsonparser.cc rgw/rgw_common.cc rgw/rgw_json_enc.cc
-ceph_rgw_jsonparser_CXXFLAGS = ${CRYPTO_CXXFLAGS} ${AM_CXXFLAGS}
-ceph_rgw_jsonparser_LDADD = $(my_radosgw_ldadd)
+#radosgw_LDADD = $(my_radosgw_ldadd) -lfcgi -lresolv
+#radosgw_CXXFLAGS = ${AM_CXXFLAGS}
+#radosgw_admin_SOURCES = rgw/rgw_admin.cc
+#radosgw_admin_CXXFLAGS = ${AM_CXXFLAGS}
+#radosgw_admin_LDADD = $(my_radosgw_ldadd)
+#ceph_rgw_multiparser_SOURCES = rgw/rgw_multiparser.cc
+#ceph_rgw_multiparser_CXXFLAGS = ${AM_CXXFLAGS}
+#ceph_rgw_multiparser_LDADD = $(my_radosgw_ldadd)
+#ceph_rgw_jsonparser_SOURCES = rgw/rgw_jsonparser.cc rgw/rgw_common.cc rgw/rgw_json_enc.cc
+#ceph_rgw_jsonparser_CXXFLAGS = ${CRYPTO_CXXFLAGS} ${AM_CXXFLAGS}
+#ceph_rgw_jsonparser_LDADD = $(my_radosgw_ldadd)
 
 # librbd
 librbd_la_SOURCES = \
@@ -3319,11 +3319,11 @@ libcls_refcount_la_LIBADD = $(PTHREAD_LIBS) $(EXTRALIBS)
 libcls_refcount_la_LDFLAGS = ${AM_LDFLAGS} -version-info 1:0:0 -export-symbols-regex '.*__cls_.*'
 
 # rgw: rados gateway
-libcls_rgw_la_SOURCES = cls/rgw/cls_rgw.cc
-libcls_rgw_la_CFLAGS = ${AM_CFLAGS}
-libcls_rgw_la_CXXFLAGS = ${AM_CXXFLAGS}
-libcls_rgw_la_LIBADD = $(PTHREAD_LIBS) $(EXTRALIBS)
-libcls_rgw_la_LDFLAGS = ${AM_LDFLAGS} -version-info 1:0:0 -export-symbols-regex '.*__cls_.*'
+#libcls_rgw_la_SOURCES = cls/rgw/cls_rgw.cc
+#libcls_rgw_la_CFLAGS = ${AM_CFLAGS}
+#libcls_rgw_la_CXXFLAGS = ${AM_CXXFLAGS}
+#libcls_rgw_la_LIBADD = $(PTHREAD_LIBS) $(EXTRALIBS)
+#libcls_rgw_la_LDFLAGS = ${AM_LDFLAGS} -version-info 1:0:0 -export-symbols-regex '.*__cls_.*'
 libcls_lock_client_a_SOURCES = \
 	cls/lock/cls_lock_client.cc  \
 	cls/lock/cls_lock_types.cc \
@@ -3563,10 +3563,10 @@ unittest_texttable_SOURCES = test/test_texttable.cc common/TextTable.cc
 unittest_texttable_LDFLAGS = $(PTHREAD_CFLAGS) ${AM_LDFLAGS}
 unittest_texttable_LDADD = librados.la ${UNITTEST_LDADD}
 unittest_texttable_CXXFLAGS = ${AM_CXXFLAGS} ${UNITTEST_CXXFLAGS}
-ceph_test_cors_SOURCES = test/test_cors.cc
-ceph_test_cors_LDFLAGS = libglobal.la
-ceph_test_cors_LDADD = librados.la librgw.a ${UNITTEST_LDADD} ${UNITTEST_STATIC_LDADD} $(CRYPTO_LIBS) -lcurl -luuid -lexpat
-ceph_test_cors_CXXFLAGS = ${AM_CXXFLAGS} ${UNITTEST_CXXFLAGS}
+#ceph_test_cors_SOURCES = test/test_cors.cc
+#ceph_test_cors_LDFLAGS = libglobal.la
+#ceph_test_cors_LDADD = librados.la librgw.a ${UNITTEST_LDADD} ${UNITTEST_STATIC_LDADD} $(CRYPTO_LIBS) -lcurl -luuid -lexpat
+#ceph_test_cors_CXXFLAGS = ${AM_CXXFLAGS} ${UNITTEST_CXXFLAGS}
 ceph_test_librbd_SOURCES = test/librbd/test_librbd.cc test/librados/test.cc
 ceph_test_librbd_LDADD = librbd.la librados.la ${UNITTEST_STATIC_LDADD}
 ceph_test_librbd_CXXFLAGS = ${AM_CXXFLAGS} ${UNITTEST_CXXFLAGS}
@@ -3591,11 +3591,11 @@ ceph_test_cls_lock_SOURCES = test/cls_lock/test_cls_lock.cc test/librados/test.c
 ceph_test_cls_lock_LDFLAGS = ${AM_LDFLAGS}
 ceph_test_cls_lock_LDADD = libcls_lock_client.a librados.la ${UNITTEST_STATIC_LDADD}
 ceph_test_cls_lock_CXXFLAGS = ${AM_CXXFLAGS} ${UNITTEST_CXXFLAGS}
-ceph_test_cls_rgw_SOURCES = test/cls_rgw/test_cls_rgw.cc \
-	test/librados/test.cc
+#ceph_test_cls_rgw_SOURCES = test/cls_rgw/test_cls_rgw.cc \
+#	test/librados/test.cc
 
-ceph_test_cls_rgw_LDADD = librados.la libcls_rgw_client.a ${UNITTEST_STATIC_LDADD}
-ceph_test_cls_rgw_CXXFLAGS = ${AM_CXXFLAGS} ${UNITTEST_CXXFLAGS}
+#ceph_test_cls_rgw_LDADD = librados.la libcls_rgw_client.a ${UNITTEST_STATIC_LDADD}
+#ceph_test_cls_rgw_CXXFLAGS = ${AM_CXXFLAGS} ${UNITTEST_CXXFLAGS}
 ceph_test_mon_workloadgen_SOURCES = \
      test/mon/test_mon_workloadgen.cc \
 		 osdc/Objecter.cc \

@@ -18,6 +18,7 @@
 #include "msg_types.h"
 #include "Messenger.h"
 #include "auth/AuthSessionHandler.h"
+#include <rdma/rsocket.h>
 
 
 class SimpleMessenger;
@@ -276,7 +277,7 @@ class DispatchQueue;
 
     void shutdown_socket() {
       if (sd >= 0)
-        ::shutdown(sd, SHUT_RDWR);
+        ::rshutdown(sd, SHUT_RDWR);
     }
 
     /**

@@ -1,3 +1,9 @@
 Ceph 0.63.3 with RSockets support
 
-Does not compile.
+Compile instructions:
+# ./configure LIBS="-lrdmacm"
+# make
+# make install
+
+
+

@@ -295,12 +295,18 @@ libcommon_la-MonClient.lo: mon/MonClient.cc msg/SimpleMessenger.h \
  /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
  msg/DispatchQueue.h common/PrioritizedQueue.h common/Formatter.h \
  /usr/include/inttypes.h msg/Pipe.h auth/AuthSessionHandler.h \
- msg/Message.h auth/Auth.h msg/Accepter.h messages/MMonGetMap.h \
- messages/MMonGetVersion.h messages/MMonGetVersionReply.h \
- messages/MMonMap.h mon/MonMap.h include/err.h messages/MAuth.h \
- messages/PaxosServiceMessage.h mon/Session.h auth/AuthServiceHandler.h \
- osd/OSDMap.h osd/osd_types.h include/CompatSet.h include/interval_set.h \
- common/snap_types.h os/hobject.h include/object.h include/cmp.h \
+ msg/Message.h auth/Auth.h /usr/include/rdma/rsocket.h \
+ /usr/include/infiniband/verbs.h /usr/include/rdma/rdma_cma.h \
+ /usr/include/infiniband/sa.h /usr/include/poll.h \
+ /usr/include/x86_64-linux-gnu/sys/poll.h \
+ /usr/include/x86_64-linux-gnu/bits/poll.h \
+ /usr/include/x86_64-linux-gnu/bits/poll2.h msg/Accepter.h \
+ messages/MMonGetMap.h messages/MMonGetVersion.h \
+ messages/MMonGetVersionReply.h messages/MMonMap.h mon/MonMap.h \
+ include/err.h messages/MAuth.h messages/PaxosServiceMessage.h \
+ mon/Session.h auth/AuthServiceHandler.h osd/OSDMap.h osd/osd_types.h \
+ include/CompatSet.h include/interval_set.h common/snap_types.h \
+ os/hobject.h include/object.h include/cmp.h \
  json_spirit/json_spirit_value.h /usr/include/c++/4.7/cassert \
  /usr/include/c++/4.7/stdexcept /usr/include/boost/cstdint.hpp \
  /usr/lib/gcc/x86_64-linux-gnu/4.7/include-fixed/limits.h \
@@ -1454,6 +1460,22 @@ auth/AuthSessionHandler.h:
 msg/Message.h:
 
 auth/Auth.h:
+
+/usr/include/rdma/rsocket.h:
+
+/usr/include/infiniband/verbs.h:
+
+/usr/include/rdma/rdma_cma.h:
+
+/usr/include/infiniband/sa.h:
+
+/usr/include/poll.h:
+
+/usr/include/x86_64-linux-gnu/sys/poll.h:
+
+/usr/include/x86_64-linux-gnu/bits/poll.h:
+
+/usr/include/x86_64-linux-gnu/bits/poll2.h:
 
 msg/Accepter.h:
 

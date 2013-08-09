@@ -13,7 +13,6 @@
  */
 
 #include <rdma/rsocket.h>
-#include <sys/socket.h>
 #include <assert.h>
 #include <netinet/tcp.h>
 #include <sys/uio.h>
@@ -196,7 +195,7 @@ void *Accepter::entry()
   pfd.events = POLLIN | POLLERR | POLLNVAL | POLLHUP;
   while (!done) {
     ldout(msgr->cct,20) << "accepter calling poll" << dendl;
-    int r = poll(&pfd, 1, -1);
+    int r = rpoll(&pfd, 1, -1);
     if (r < 0)
       break;
     ldout(msgr->cct,20) << "accepter poll got " << r << dendl;
